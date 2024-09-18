@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="CSS/utils.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <title>Alaa Duridi</title>
+</head>
+
+<body>
+<header>
+    <nav class="controls">
+        <div class="control active-btn">
+            <a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <div class="hover-items">
+                <p>Home</p>
+            </div>
+        </div>
+        <div class="control" data-id="about">
+            <a href="#about"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <div class="hover-items">
+                <p>About</p>
+            </div>
+        </div>
+<!--        <div class="control" data-id="projects">-->
+<!--            <a href="#projects"><i class="fa fa-briefcase" aria-hidden="true"></i></a>-->
+<!--            <div class="hover-items">-->
+<!--                <p>Projects</p>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="control" data-id="contact">
+            <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <div class="hover-items">
+                <p>Contact</p>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+<!--    home-->
+    <section class="section sec-1 home" id="home">
+        <div class="home-content">
+            <div class="left-home">
+                <div class="h-shape">
+                    <div class="image">
+                        <img src="images/robot.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right-home">
+                <h1 class="name">
+                    Hi I'm <br class="br"> <span class="my-name h2">Alaa Duridi</span>
+                </h1>
+                <div class="res-btn">
+                    <a href="https://docs.google.com/document/d/1ekDSj6fxIvqXUboT54RRUyFVhVHfQSNQ/edit?usp=sharing&ouid=117249522079656924241&rtpof=true&sd=true" target="_blank" class="res-a-tag">
+                    <span class="res-btn-text">
+                        View Résumé
+                    </span>
+                        <span class="res-btn-icon">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                    </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" about-skills-section" id="about">
+        <div class="about-content">
+            <h2 class="section-title">Get to know me!</h2>
+<p>I am a passionate and driven <strong>Computer Systems Engineer </strong>with a strong focus on both frontend and backend development.
+    My expertise spans modern web technologies like ReactJS, Laravel, and AWS, allowing me to build scalable and efficient applications for diverse environments.</p>
+            <p>
+    Currently pursuing my B.Sc. in Computer Systems Engineering at Palestine Technical University – Kadoorie,
+    I've developed a solid foundation in software engineering principles, maintaining a high academic performance.
+    Alongside my studies, I've had the privilege of working part-time at BrocaliLLC.</p>
+            <p>
+    I am always eager to take on new challenges, learn, and grow. Whether it’s contributing to open-source projects, working on collaborative team initiatives,
+    or exploring new technologies,
+    I am committed to creating innovative solutions that drive success.
+</p>
+
+
+            <button  class="contact-btn"><a href="#contact">Contact</a></button>
+        </div>
+
+        <div class="skills-content">
+            <h3>My Skills</h3>
+            <div class="skills-list">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">GIT</span>
+                <span class="skill-tag">Github</span>
+                <span class="skill-tag">Typescript</span>
+                <span class="skill-tag">Cloud Computing</span>
+                <span class="skill-tag">NodeJS</span>
+                <span class="skill-tag">Blade</span>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+<!--    contact-->
+    <div class="contact paddingVertically" id="contact">
+        <!-- Section Header : is general  -->
+        <div class="section-header pd-y mg-b-20">
+            <h2 class="section-title mg-b-10 capitalize">get in touch</h2>
+            <span class="line"></span>
+        </div>
+        <!-- /.section-header -->
+        <div class="container">
+            <div class="getintouch-items">
+                <div class="item">
+                    <i class="fa fa-phone fa-2x"></i>
+                    <h3 class="item-title">Phone</h3>
+                    <span class="item-text">2685142</span>
+                </div><!-- /.item -->
+                <div class="item specialMargin">
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <h3 class="item-title">Email</h3>
+                    <span class="item-text">alaa.duridi7@gmail.com</span>
+                </div><!-- /.item -->
+                <div class="item">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <h3 class="item-title">Address</h3>
+                    <span class="item-text">Tulkarm West-Bank</span>
+                </div><!-- /.item -->
+            </div><!-- /.getintouch-items -->
+            <form action="">
+                <div class="two-inputs">
+                    <input type="text" placeholder="Name...">
+                    <input type="email" placeholder="Email...">
+                </div><!-- /.two inputs -->
+                <input type="text" placeholder="Subject...">
+                <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+                <input type="submit" value="Send Message" >
+            </form>
+        </div><!-- /.container -->
+    </div> <!-- /.caontactSection  -->
+
+<!--footer-->
+    <section class="footer paddingVertically">
+
+        <div class="footer-info">
+            <ul class="footer-links">
+                <li> <a href="#https://www.linkedin.com/in/alaa-duridi-91743a203/" class="hover-opacity"> <i class="fa fa-github"></i></a></li>
+                <li> <a href="#" class="hover-opacity"> <i class="fa fa-linkedin"></i></a></li>
+
+
+            </ul>
+            <p class="copyright uppercase"> copyright &copy 2024 -</p>
+        </div>
+    </section>
+</main>
+</body>
+</html>
