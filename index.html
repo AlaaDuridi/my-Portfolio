@@ -2,169 +2,605 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Fonts -->
+    <!-- Web Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Stylesheet
+    ============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome Icon -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="CSS/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="CSS/utils.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css" />
+    <!-- Custom Stylesheet -->
 
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+
+    <link rel="stylesheet" href="CSS/utils.css" />
     <title>Alaa Duridi</title>
 </head>
 
-<body>
-<header>
-    <nav class="controls">
-        <div class="control active-btn">
-            <a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
-            <div class="hover-items">
-                <p>Home</p>
-            </div>
-        </div>
-        <div class="control" data-id="about">
-            <a href="#about"><i class="fa fa-user" aria-hidden="true"></i></a>
-            <div class="hover-items">
-                <p>About</p>
-            </div>
-        </div>
-<!--        <div class="control" data-id="projects">-->
-<!--            <a href="#projects"><i class="fa fa-briefcase" aria-hidden="true"></i></a>-->
-<!--            <div class="hover-items">-->
-<!--                <p>Projects</p>-->
-<!--            </div>-->
-<!--        </div>-->
-        <div class="control" data-id="contact">
-            <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <div class="hover-items">
-                <p>Contact</p>
-            </div>
-        </div>
-    </nav>
-</header>
+<body class="side-header" data-bs-spy="scroll" data-bs-target="#header-nav" data-bs-offset="1">
+<!--Preloader-->
+<div class="preloader preloader-dark">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--Preloader End-->
 
-<main>
-<!--    home-->
-    <section class="section sec-1 home" id="home">
-        <div class="home-content">
-            <div class="left-home">
-                <div class="h-shape">
-                    <div class="image">
-                        <img src="images/robot.png" alt="">
+<!--Doc Wrapper-->
+<div id="main-wrapper">
+<!-- Header-->
+    <header id="header" class="sticky-top">
+<!--Navbar-->
+        <nav class="primary-menu navbar navbar-expand-lg navbar-dark bg-dark border-bottom-0">
+            <div class="container-fluid position-relative h-100 flex-lg-column ps-3 px-lg-3 pt-lg-3 pb-lg-2">
+            <!--                logo-->
+                <span class="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block">
+                        <img class="img-fluid rounded-pill d-block"  oncontextmenu="return false;"
+                             sizes="(max-width: 600px) 500px, (max-width: 1200px) 1000px, 1500px"
+                             onerror="this.onerror=null; this.src='./images/robot.png';"
+                             draggable="false" src="https://andportfolio.s3.eu-north-1.amazonaws.com/my-pic-1.jpg" title="I'm Alaa" alt="">
+                    </span>
+                    <h1 class="text-5 text-white text-center mb-0 d-lg-block">Alaa Duridi</h1>
+<!--                Logo end-->
+                <div id="header-nav" class="collapse navbar-collapse w-100 my-lg-auto">
+                    <ul class="navbar-nav text-lg-center my-lg-auto py-lg-3">
+                        <li class="nav-item"><a class="nav-link smooth-scroll active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">What I Do</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <ul class="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
+                    <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/alaa-duridi-91743a203/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="social-icons-github"><a data-bs-toggle="tooltip" href="https://leetcode.com/u/alaa_duridi/" target="_blank" title="Leet Code"><i class="fa fa-code-fork"></i></a></li>
+                    <li class="social-icons-github"><a data-bs-toggle="tooltip" href="https://github.com/AlaaDuridi" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+<!--        Navbar end-->
+    </header>
+<!--    End of Header-->
+
+<!--    Content-->
+    <div id="content" role="main">
+        <!-- Intro
+        ============================================= -->
+        <section id="home">
+            <div class="hero-wrap">
+                <div class="hero-mask opacity-8 bg-dark"></div>
+                <div class="hero-bg parallax" style="background-image:url('images/background/background3.webp');"></div>
+
+                <div class="hero-content section d-flex min-vh-100">
+                    <div class="container my-auto">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div class="typed-strings">
+                                    <p>I'm Alaa Duridi</p>
+                                    <p>I'm a Software Engineer.</p>
+                                    <p>I'm a Learner.</p>
+                                    <p>I'm a Coder.</p>
+                                </div>
+                                <p class="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
+                                <h2 class="text-16 fw-600 text-white mb-2 mb-md-3"><span class="typed"></span></h2>
+                                <p class="text-5 text-light mb-4">based in West Bank, Palestine.</p>
+                                <a href="#contact" class="btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#about" class="scroll-down-arrow text-white smooth-scroll"><span class="animated"><i class="fa fa-chevron-down"></i></span></a> </div>
+            </div>
+        </section>
+        <!-- Intro end -->
+<!--        About -->
+        <section id="about" class="section bg-dark-1">
+
+            <div class="container px-lg-5">
+                <div class="position-relative d-flex text-center mb-5">
+                    <h2 class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0">About Me</h2>
+                    <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">
+                        Know Me More
+                        <span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span>
+                    </p>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-7 col-xl-8 text-center text-lg-start">
+                        <h2 class="text-7 text-white fw-600 mb-3">
+                            I'm <span class="text-primary">Alaa N Duridi</span> a Software Engineer, Interested in Web development
+                        </h2>
+                        <p class="text-white-50">         <p>
+                        I am always eager to take on new challenges, learn, and grow. Whether it’s contributing to open-source projects, working on collaborative team initiatives, or exploring new technologies,</p>
+                        <p class="text-white-50"> I am committed to creating innovative solutions that drive success.</p>
+                    </div>
+                </div>
+
+                <div class="brands-grid separator-border separator-border-light mt-5">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="featured-box text-center">
+                                <h4 class="text-12 text-white-50 mb-0"><span class="counter" data-from="0" data-to="10">1</span>+</h4>
+                                <p class="text-light mb-0">Years Experiance</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="featured-box text-center">
+                                <h4 class="text-12 text-white-50 mb-0"><span class="counter" data-from="0" data-to="3">3</span>+</h4>
+                                <p class="text-light mb-0">Happy Clients</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="featured-box text-center">
+                                <h4 class="text-12 text-white-50 mb-0"><span class="counter" data-from="0" data-to="30">30</span>+</h4>
+                                <p class="text-light mb-0">Projects Done</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="featured-box text-center">
+                                <h4 class="text-12 text-white-50 mb-0"><span class="counter" data-from="0" data-to="10">10</span>+</h4>
+                                <p class="text-light mb-0">Get Certificates</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="right-home">
-                <h1 class="name">
-                    Hi I'm <br class="br"> <span class="my-name h2">Alaa Duridi</span>
-                </h1>
-                <div class="res-btn">
-                    <a href="https://docs.google.com/document/d/1ekDSj6fxIvqXUboT54RRUyFVhVHfQSNQ/edit?usp=sharing&ouid=117249522079656924241&rtpof=true&sd=true" target="_blank" class="res-a-tag">
-                    <span class="res-btn-text">
-                        View Résumé
-                    </span>
-                        <span class="res-btn-icon">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                    </span>
-                    </a>
+
+        </section>
+<!--        end of about section-->
+
+<!--        Services-->
+        <section id="services" class="section bg-dark-2">
+            <div class="container px-lg-5">
+                <!-- Heading -->
+                <div class="position-relative d-flex text-center mb-5">
+                    <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Services</h2>
+                    <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">What I Do?<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+                </div>
+                <!-- Heading end-->
+
+                <div class="row">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="featured-box style-3 mb-5">
+                                    <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fa fa-code"></i> </div>
+                                    <h3 class="text-white">Full-Stack Web Development</h3>
+                                    <p class="text-white-50 mb-0">Building complete web applications, from Frontend (React, Pure, CSS frameworks like bootstrap) to Backend(Laravel, Node JS)</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="featured-box style-3 mb-5">
+                                    <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fa fa-cogs"></i></div>
+                                    <h3 class="text-white">API Development & Integration</h3>
+                                    <p class="text-white-50 mb-0">Designing, developing, and integrating RESTful APIs for seamless communication between Frontend and Backend systems.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="featured-box style-3 mb-5">
+                                    <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fa fa-laptop "></i> </div>
+                                    <h3 class="text-white">Responsive UI/UX Design:</h3>
+                                    <p class="text-white-50 mb-0">Crafting responsive, user-friendly interfaces that adapt to any device using HTML, CSS, JavaScript frameworks, and libraries.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="featured-box style-3 mb-5">
+                                    <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fa fa-database"></i> </div>
+                                    <h3 class="text-white">Database Design &amp; Management</h3>
+                                    <p class="text-white-50 mb-0"> Expertise in relational (MySQL) and NoSQL (MongoDB) databases, including schema design, optimization, and querying.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="featured-box style-3 mb-5 mb-md-0">
+                                    <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fa fa-cloud"></i> </div>
+                                    <h3 class="text-white">Cloud Computing</h3>
+                                    <p class="text-white-50 mb-0">Solid understanding of the fundamentals of cloud computing concepts, and a strong foundation in Amazon Web Services and techniques</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="featured-box style-3 mb-0">
+                                    <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i class="fa fa-code-fork "></i> </div>
+                                    <h3 class="text-white">Version Control & Collaboration</h3>
+                                    <p class="text-white-50 mb-0">Proficiency in Git/GitHub workflows for version control, collaboration, and maintaining code quality across development teams.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+<!--        End of services-->
+<!--        Resume-->
+        <section id="resume" class="section bg-dark-1">
+            <div class="container px-lg-5">
+<!--                Heading-->
+                <div class="position-relative d-flex text-center mb-5">
+                    <h2 class="text-24 text-muted opacity-1 text-uppercase fw-600 w-600 w-100 mb-0">Summary</h2>
+                    <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">
+                        Resume<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto">
+                    </span>
+                    </p>
+                </div>
+<!--                End of Heading-->
 
-    <section class=" about-skills-section" id="about">
-        <div class="about-content">
-            <h2 class="section-title">Get to know me!</h2>
-<p>I am a passionate and driven <strong>Computer Systems Engineer </strong>with a strong focus on both frontend and backend development.
-    My expertise spans modern web technologies like ReactJS, Laravel, and AWS, allowing me to build scalable and efficient applications for diverse environments.</p>
-            <p>
-    Currently pursuing my B.Sc. in Computer Systems Engineering at Palestine Technical University – Kadoorie,
-    I've developed a solid foundation in software engineering principles, maintaining a high academic performance.
-    Alongside my studies, I've had the privilege of working part-time at BrocaliLLC.</p>
-            <p>
-    I am always eager to take on new challenges, learn, and grow. Whether it’s contributing to open-source projects, working on collaborative team initiatives,
-    or exploring new technologies,
-    I am committed to creating innovative solutions that drive success.
-</p>
+                <div class="row gx-5">
+<!--                    My Education-->
+                    <div class="col-md-6">
 
+                        <h2 class="text-6 text-white fw-600 mb-4">My Education</h2>
+                        <div class="bg-dark rounded p-4 mb-4">
+                            <p class="badge bg-danger text-2 fw-400">2020-Present</p>
+                            <h3 class="text-5 text-white">B.Ss in Computer Systems Engineering</h3>
+                            <p class="text-primary">Palestine Technical University-Kadoorie </p>
+                        </div>
 
-            <button  class="contact-btn"><a href="#contact">Contact</a></button>
-        </div>
+                        <div class="bg-dark rounded p-4 mb-4">
+                            <p class="badge bg-danger text-2 fw-400">Aug2022-Dec2022</p>
+                            <h3 class="text-5 text-white">AWS Certified Cloud Practitioner</h3>
+                            <p class="text-primary">Amazon Web Services Training and Certification </p>
+                            <p class="text-white-50 mb-2">
+                                Demonstrated knowledge in cloud concepts, AWS services, security, architecture, pricing, and support.
+                            </p>
+                            <a href="https://www.credly.com/badges/1fd197ef-d85d-4874-8af6-9f633bbbd953/public_url" class="btn btn-outline-primary btn-sm" target="_blank">View Certification</a>
+                        </div>
+                        <div class="bg-dark rounded p-4 mb-4">
+                            <p class="badge bg-danger text-2 fw-400">Aug2022-Dec2022</p>
+                            <h3 class="text-5 text-white">AWS re/start Program</h3>
+                            <p class="text-primary">Amazon Web Services Training and Certification </p>
+                            <p class="text-white-50 mb-2">
+                                Completed the AWS re/Start program, gaining hands-on experience with core AWS services and practical IT skills.
+                            </p>
+                            <a href="https://www.credly.com/badges/7350c38f-a896-487c-a69e-51276aec37fe/public_url" class="btn btn-outline-primary btn-sm" target="_blank">View Certification</a>
+                        </div>
+                        <div class="bg-dark rounded p-4 mb-4">
+                            <p class="badge bg-danger text-2 fw-400">2019-2020</p>
+                            <h3 class="text-5 text-white">Tawjihi</h3>
+                            <p class="text-primary">Beit Lid Girls' Secondary School </p>
+                        </div>
 
-        <div class="skills-content">
-            <h3>My Skills</h3>
-            <div class="skills-list">
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Laravel</span>
-                <span class="skill-tag">PHP</span>
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">GIT</span>
-                <span class="skill-tag">Github</span>
-                <span class="skill-tag">Typescript</span>
-                <span class="skill-tag">Cloud Computing</span>
-                <span class="skill-tag">NodeJS</span>
-                <span class="skill-tag">Blade</span>
+                    </div>
+<!--                    End of my education -->
+
+<!--                    My experience -->
+                    <div class="col-md-6">
+                        <h2 class="text-6 text-white fw-600 mb-4">My Experience</h2>
+                        <div class="bg-dark rounded p-4 mb-4">
+                            <p class="badge bg-danger text-2 fw-400">Apr2024 - Present</p>
+                            <h3 class="text-5 text-white">Part-time ReactJs Developer</h3>
+                            <p class="text-primary">BrocaliLLC</p>
+                            <p class="text-white-50 mb-0">Collaborated in a fast-paced team environment to design features that enhance user interactivity and experience.</p>
+                        </div>
+                        <div class="bg-dark rounded p-4 mb-4">
+                            <p class="badge bg-danger text-2 fw-400">Dec2023-Present</p>
+                            <h3 class="text-5 text-white">Laravel Backend</h3>
+                            <p class="text-primary">BrocaliLLC</p>
+                            <p class="text-white-50 mb-0">mDeveloped an AI-driven learning and examination platform for educational institutions and businesses.</p>
+                        </div>
+                        <div class="bg-dark rounded p-4 mb-4">
+                            <p class="badge bg-danger text-2 fw-400">Apr2023 - Jun2023</p>
+                            <h3 class="text-5 text-white">Advance JavaScript Course</h3>
+                            <p class="text-primary">Gaza Sky Geeks</p>
+                            <p class="text-white-50 mb-0">
+                                Participated in an online course, learned advanced topics in JavaScript, and applied CLI projects.</p>
+                        </div>
+                        <div class="bg-dark rounded p-4 mb-4">
+                            <p class="badge bg-danger text-2 fw-400">Nov2022 - Jan2023</p>
+                            <h3 class="text-5 text-white">Volunteer Lecturer</h3>
+                            <p class="text-primary">Computer Systems Engineering Club at Palestine Technical University.</p>
+                            <p class="text-white-50 mb-0">
+                                I served as the instructor for the second-year data structures course.</p>
+                        </div>
+                    </div>
+<!--                    end of my experience-->
+<hr>
+<!--                    my skills-->
+                    <h2 class="text-6 text-white fw-600 mt-4 mb-4">My Skills</h2>
+                    <div class="row gx-5">
+                        <div class="col-md-6">
+                            <p class="text-light fw-500 text-start mb-2">Laravel <span class="float-end">80%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-light fw-500 text-start mb-2">AWS <span class="float-end">65%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-light fw-500 text-start mb-2">HTML/CSS <span class="float-end">95%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-light fw-500 text-start mb-2">JavaScript <span class="float-end">80%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-light fw-500 text-start mb-2">NodeJS <span class="float-end">80%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-light fw-500 text-start mb-2">React JS <span class="float-end">80%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-light fw-500 text-start mb-2">TypeScript <span class="float-end">80%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-light fw-500 text-start mb-2">PHP<span class="float-end">75%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-light fw-500 text-start mb-2">Bootstrap <span class="float-end">65%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="text-light fw-500 text-start mb-2">GIT/Github <span class="float-end">85%</span></p>
+                            <div class="progress progress-sm bg-dark mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+<!--                    end of my skills-->
+                </div>
+                <div class="text-center mt-5">
+                    <a target="_blank" href="https://docs.google.com/document/d/1ekDSj6fxIvqXUboT54RRUyFVhVHfQSNQ/edit?usp=sharing&ouid=117249522079656924241&rtpof=true&sd=true"
+                       class="btn btn-outline-secondary rounded-pill shadow-none">View Résumé<span class="ms-1"><i class="fa fa-eye fa-lg"></i></span></a></div>
+                </div>
+        </section>
+<!--        end of resume -->
+
+<!--        Portfolio Section - my work -->
+        <section id="portfolio" class="section bg-dark-2">
+            <div class="container px-lg-5">
+                <!-- Heading -->
+                <div class="position-relative d-flex text-center mb-5">
+                    <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Portfolio</h2>
+                    <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">My Work<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+                </div>
+                <!-- Heading end-->
+
+                <!-- Filter Menu -->
+                <ul class="portfolio-menu nav nav-tabs nav-light justify-content-center border-bottom-0 mb-5">
+                    <li class="nav-item"> <a data-filter="*" class="nav-link active" href="">All</a></li>
+                    <li class="nav-item"> <a data-filter=".fe" href="" class="nav-link">FrontEnd</a></li>
+                    <li class="nav-item"> <a data-filter=".be" href="" class="nav-link">BackEnd</a></li>
+                    <li class="nav-item"> <a data-filter=".others" href="" class="nav-link">Others</a></li>
+                </ul>
+                <!-- Filter Menu end -->
+                <div class="portfolio popup-ajax-gallery">
+                    <div class="row portfolio-filter g-4">
+                        <div class="col-sm-6 col-lg-4 fe">
+                            <div class="portfolio-box rounded">
+                                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/work/tik-tak-toe.png" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-overlay-details">
+                                            <h5 class="text-white fw-400">Tic Tac Toe</h5>
+                                            <span class="text-light">ReactJS</span> </div>
+                                        <a class="btn btn-primary mt-3" target="_blank"  href="https://github.com/AlaaDuridi/Tic-Tac-Toe?tab=readme-ov-file"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 fe">
+                            <div class="portfolio-box rounded">
+                                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/work/dashboard.png" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-overlay-details">
+                                            <h5 class="text-white fw-400">MUI Dashboard</h5>
+                                            <span class="text-light">ReactJS</span> </div>
+                                        <a class="btn btn-primary mt-3" target="_blank"  href="https://github.com/AlaaDuridi/muiDashboard?tab=readme-ov-file"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 artwork fe">
+                            <div class="portfolio-box rounded">
+                                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/work/cal.png" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-overlay-details">
+                                            <h5 class="text-white fw-400">Investment Calculator</h5>
+                                            <span class="text-light">ReactJS</span> </div>
+                                        <a class="btn btn-primary mt-3" target="_blank"  href="https://github.com/AlaaDuridi/Investment-Calculator?tab=readme-ov-file"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 artwork brand be">
+                            <div class="portfolio-box rounded">
+                                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/work/sepizza.png" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-overlay-details">
+                                            <h5 class="text-white fw-400">SEPizza</h5>
+                                            <span class="text-light">PHP</span> </div>
+                                        <a class="btn btn-primary mt-3" target="_blank"  href="https://github.com/AlaaDuridi/SEPIZZA?tab=readme-ov-file"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 be">
+                            <div class="portfolio-box rounded">
+                                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/work/codegram.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-overlay-details">
+                                            <h5 class="text-white fw-400">CodeGram</h5>
+                                            <span class="text-light">Laravel10 X OpenAI</span> </div>
+                                        <a class="btn btn-primary mt-3" target="_blank"  href="https://github.com/AlaaDuridi/Laravel-10-codeGram"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 others">
+                            <div class="portfolio-box rounded">
+                                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/work/todo.webp" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-overlay-details">
+                                            <h5 class="text-white fw-400">TODO APP</h5>
+                                            <span class="text-light">JavaScript</span></div>
+                                        <a class="btn btn-primary mt-3" target="_blank"  href="https://github.com/AlaaDuridi/TODO-APP"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 design others">
+                            <div class="portfolio-box rounded">
+                                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/work/oop.png" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-overlay-details">
+                                            <h5 class="text-white fw-400">Hotel</h5>
+                                            <span class="text-light">OOP</span> </div>
+                                            <a class="btn btn-primary mt-3" target="_blank"  href="https://github.com/AlaaDuridi/Hotel"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- about -->
-<!--    contact-->
-    <div class="contact paddingVertically" id="contact">
-        <!-- Section Header : is general  -->
-        <div class="section-header pd-y mg-b-20">
-            <h2 class="section-title mg-b-10 capitalize">get in touch</h2>
-            <span class="line"></span>
-        </div>
-        <!-- /.section-header -->
-        <div class="container">
-            <div class="getintouch-items">
-                <div class="item">
-                    <i class="fa fa-phone fa-2x"></i>
-                    <h3 class="item-title">Phone</h3>
-                    <span class="item-text">2685142</span>
-                </div><!-- /.item -->
-                <div class="item specialMargin">
-                    <i class="fa fa-envelope fa-2x"></i>
-                    <h3 class="item-title">Email</h3>
-                    <span class="item-text">alaa.duridi7@gmail.com</span>
-                </div><!-- /.item -->
-                <div class="item">
-                    <i class="fa fa-map-marker fa-2x"></i>
-                    <h3 class="item-title">Address</h3>
-                    <span class="item-text">Tulkarm West-Bank</span>
-                </div><!-- /.item -->
-            </div><!-- /.getintouch-items -->
-            <form action="">
-                <div class="two-inputs">
-                    <input type="text" placeholder="Name...">
-                    <input type="email" placeholder="Email...">
-                </div><!-- /.two inputs -->
-                <input type="text" placeholder="Subject...">
-                <textarea cols="30" rows="10" placeholder="Message..."></textarea>
-                <input type="submit" value="Send Message" >
-            </form>
-        </div><!-- /.container -->
-    </div> <!-- /.caontactSection  -->
+        </section>
 
-<!--footer-->
-    <section class="footer paddingVertically">
+<!--        End of my work section -->
 
-        <div class="footer-info">
-            <ul class="footer-links">
-                <li> <a href="#https://www.linkedin.com/in/alaa-duridi-91743a203/" class="hover-opacity"> <i class="fa fa-github"></i></a></li>
-                <li> <a href="#" class="hover-opacity"> <i class="fa fa-linkedin"></i></a></li>
+<!--        Contact section-->
+        <section id="contact" class="section bg-dark-2">
+            <div class="container px-lg-5">
+                <!-- Heading -->
+                <div class="position-relative d-flex text-center mb-5">
+                    <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Contact</h2>
+                    <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Get in Touch<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+                </div>
+                <!-- Heading end-->
+                <div class="row gy-5">
+                    <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+                        <h2 class="mb-3 text-5 text-white text-uppercase">Address</h2>
+                        <p class="text-3 text-light mb-4">Beit Lid,<br>
+                            Tulkarm.<br>
+                            West Bank</p>
+                        <p class="text-3 text-light mb-1"><span class="text-primary text-4 me-2"><i class="fa fa-phone"></i></span>(+970)593687636</p>
+                        <p class="text-3 text-light mb-4"><span class="text-primary text-4 me-2"><i class="fa fa-envelope"></i></span>alaa.duridi7@gmail.com</p>
+                        <h2 class="mb-3 text-5 text-white text-uppercase">Follow Me</h2>
+                        <ul class="social-icons social-icons-muted justify-content-center justify-content-md-start">
+                            <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/alaa-duridi-91743a203/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="social-icons-github"><a data-bs-toggle="tooltip" href="https://leetcode.com/u/alaa_duridi/" target="_blank" title="Leet Code"><i class="fa fa-code-fork"></i></a></li>
+                            <li class="social-icons-github"><a data-bs-toggle="tooltip" href="https://github.com/AlaaDuridi" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 col-xl-9 order-0 order-md-1">
+                        <h2 class="mb-3 text-5 text-white text-uppercase text-center text-md-start">Send us a note</h2>
+                        <form id="contact-form" class="form-dark" method="POST">
+                            <div class="row g-4">
+                                <div class="col-xl-6">
+                                    <label>
+                                        <input name="name" type="text" class="form-control" required placeholder="Name">
+                                    </label>
+                                </div>
+                                <div class="col-xl-6">
+                                    <label>
+                                        <input name="email" type="email" class="form-control" required placeholder="Email">
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label>
+                                        <textarea name="message" class="form-control" rows="5" required placeholder="Tell us more about your needs..."></textarea>
+                                    </label>
+                                </div>
+                                <!-- Honeypot Field -->
+                                <label>
+                                    <input type="text" name="extra-field" style="display:none;" tabindex="-1" autocomplete="off">
+                                </label>
+                            </div>
+
+                            <!-- Add reCAPTCHA -->
+                            <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+
+                            <!-- Redirect after successful submission -->
+                            <input type="hidden" name="_redirect" value="thanks.html">
+
+                            <!-- Submit Button -->
+                            <p class="text-center mt-4 mb-0">
+                                <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit">Send Message</button>
+                            </p>
+                        </form>
 
 
-            </ul>
-            <p class="copyright uppercase"> copyright &copy 2024 -</p>
-        </div>
-    </section>
-</main>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--        End of my contact section-->
+
+<!--        footer section-->
+        <footer id="footer" class="section footer-dark bg-dark-1">
+            <div class="container px-lg-5">
+                <div class="row">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <p class="mb-3 mb-lg-0">Copyright © 2024 <a href="#" class="fw-500">Alaa.N.Duridi</a>. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6">
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!--        end of footer section-->
+    </div>
+<!--    End of content-->
+
+
+</div>
+<!--End of Document Wrapper-->
+<!--Back to top-->
+<a id="back-to-top" class="rounded-circle" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Easing -->
+<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+<!-- Appear -->
+<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+<!-- Images Loaded -->
+<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<!-- Counter -->
+<script src="vendor/jquery.countTo/jquery.countTo.min.js"></script>
+<!-- Parallax Bg -->
+<script src="vendor/parallaxie/parallaxie.min.js"></script>
+<!-- Typed -->
+<script src="vendor/typed/typed.min.js"></script>
+<!-- isotope Portfolio Filter -->
+<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<!-- Magnific Popup -->
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!-- Custom Script -->
+<script src="js/index.js"></script>
+<script>
+    // Dynamically set the form action when the page loads
+    document.getElementById('contact-form').action = 'https://formspree.io/f/mwpedowa';
+</script>
 </body>
 </html>
+
+<!--Document Wrapper-->
+
+
+
